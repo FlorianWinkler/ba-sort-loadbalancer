@@ -5,7 +5,7 @@ const Request = require('request');
 router.get('/:id', handleItem);
 
 function handleItem(req, res) {
-    let partition = req.params.id[0]; // <- Routing Logik
+    let partition = req.params.id; // <- Routing Logik
     let url = "http://"+partition+":3000/sort";
     //let url = "http://127.0.0.1:300"+partition+"/sort";
 

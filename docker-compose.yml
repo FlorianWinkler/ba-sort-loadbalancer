@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+  sort01:
+    image: florianwinkler/ba-basicSort
+    ports:
+      - "3000"
+  sort02:
+    image: florianwinkler/ba-basicSort
+    ports:
+      - "3000"
+  sort03:
+    image: florianwinkler/ba-basicSort
+    ports:
+      - "3000"
+  balancer:
+    image: florianwinkler/ba-sort-loadbalancer
+    ports:
+      - "3000"

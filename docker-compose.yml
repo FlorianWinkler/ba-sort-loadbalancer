@@ -16,4 +16,4 @@ services:
   balancer:
     image: florianwinkler/ba-sort-loadbalancer
     ports:
-      - "3000"
+      - "3000:3000"

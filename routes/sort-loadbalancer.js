@@ -17,7 +17,8 @@ function handleItem(req, res) {
 
     function handleResponse(error, response, body){
         console.log("Antwort erhalten");
-        res.status(response.statusCode).end();
+        res.status(response.statusCode);
+        res.json(response.body);
     }
 }
 
